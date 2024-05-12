@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditNoteActivity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_edit_note"
+        android:background="@color/note_color">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:layout_marginRight="15dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/pastel_black"
+            android:hint="title"
+            android:id="@+id/edit_title_of_note"/>
+
+    </Toolbar>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autofillHints="your note content here"
+        android:textSize="15sp"
+        android:background="@color/note_color"
+        android:gravity="top|left"
+        android:hint="enter your note here"
+        android:layout_below="@id/toolbar_edit_note"
+        android:padding="20dp"
+        android:id="@+id/edit_content_of_note">
+    </EditText>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom|end"
+        android:id="@+id/update_note_fab"
+        android:contentDescription="save your note"
+        android:src="@drawable/check_icon"
+        android:backgroundTint="@color/button_color"
+        app:maxImageSize="40dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom|start"
+        android:id="@+id/delete_note_fab"
+        android:contentDescription="discard your note"
+        android:src="@drawable/delete_icon"
+        android:backgroundTint="@color/discard_button_color"
+        app:maxImageSize="40dp" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "936484961987",
+    "project_id": "notesapp-ace50",
+    "storage_bucket": "notesapp-ace50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936484961987:android:ec2a60a380f743f8f3ec76",
+        "android_client_info": {
+          "package_name": "com.csabszerko.notesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI2TSQVXeUM0fTRZMgCsiPzSZ_w10a8P0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

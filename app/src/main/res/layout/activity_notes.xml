@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".NotesActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom|end"
+        android:id="@+id/add_note_fab"
+        android:contentDescription="add a note"
+        android:src="@drawable/add_icon"
+        android:backgroundTint="@color/button_color"
+        app:maxImageSize="40dp"
+        />
+    
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/dummyToolbar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notes_list_recycler_view"
+        android:layout_below="@id/dummyToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -67,6 +67,7 @@ public class EditNoteActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "note deleted!", Toast.LENGTH_SHORT).show();
                         finish();
                         startActivity(new Intent(EditNoteActivity.this, NotesActivity.class));
+                        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -97,6 +98,7 @@ public class EditNoteActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "note updated successfully!", Toast.LENGTH_SHORT).show();
                             finish();
                             startActivity(new Intent(EditNoteActivity.this, NotesActivity.class));
+                            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
